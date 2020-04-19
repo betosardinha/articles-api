@@ -6,7 +6,7 @@ WORKDIR /articles-api
 COPY Gemfile /articles-api/Gemfile
 COPY Gemfile.lock /articles-api/Gemfile.lock
 
-RUN gem install bundler:2.1.4
+RUN gem install bundler
 RUN bundle update --bundler
 RUN bundle install
 
