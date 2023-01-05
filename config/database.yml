@@ -24,6 +24,9 @@ default: &default
 development:
   <<: *default
   database: articles_api_development
+  host: <%= ENV['DBHOST'] %>
+  username: <%= ENV['DBUSER'] %>
+  password: <%= ENV['DBPASS'] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
