@@ -43,6 +43,6 @@ jobs:
         with:
           bundler-cache: true
       - name: Set up database schema
-        run: rails db:schema:load
+        run: bin/rails db:schema:load
       - name: Run tests
-        run: rake
+        run: bin/rake
