@@ -1,0 +1,25 @@
+{
+  "name": "articles-api",
+  "version": "1.0.1",
+  "release": {
+    "branches": ["master", "next"],
+    "plugins": [
+      ["@semantic-release/commit-analyzer", {
+        "preset": "angular",
+        "releaseRules": [
+          {"type": "docs", "scope":"README", "release": "patch"},
+          {"type": "refactor", "release": "patch"},
+          {"type": "style", "release": "patch"},
+          {"type": "build", "release": "patch"}
+        ],
+        "parserOpts": {
+          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+        }
+      }],
+      "@semantic-release/release-notes-generator"
+    ]
+  },
+  "devDependencies": {
+    "semantic-release": "^20.0.2"
+  }
+}
