@@ -2,7 +2,7 @@
   "name": "articles-api",
   "version": "1.0.2",
   "release": {
-    "branches": ["master", "next"],
+    "branches": ["main", "next"],
     "plugins": [
       ["@semantic-release/commit-analyzer", {
         "preset": "angular",
